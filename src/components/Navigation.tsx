@@ -10,7 +10,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 px-6 py-4 rounded-full bg-white/80 backdrop-blur-lg border border-gray-200 shadow-lg animate-fade-in">
+    <nav className="px-6 py-4 rounded-full bg-white/80 backdrop-blur-lg border border-gray-200 shadow-lg animate-fade-in">
       <ul className="flex items-center space-x-8">
         <li>
           <Link
