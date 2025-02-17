@@ -10,49 +10,51 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 px-6 py-4 rounded-full bg-white/80 backdrop-blur-lg border border-gray-200 shadow-lg animate-fade-in">
-      <ul className="flex items-center space-x-8">
-        <li>
-          <Link
-            to="/"
-            className={`flex flex-col items-center transition-colors duration-300 ${
-              isActive("/")
-                ? "text-primary"
-                : "text-gray-600 hover:text-primary"
-            }`}
-          >
-            <Home className="w-6 h-6" />
-            <span className="text-xs mt-1">Home</span>
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/diary"
-            className={`flex flex-col items-center transition-colors duration-300 ${
-              isActive("/diary")
-                ? "text-primary"
-                : "text-gray-600 hover:text-primary"
-            }`}
-          >
-            <BookOpenText className="w-6 h-6" />
-            <span className="text-xs mt-1">Diary</span>
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/chat"
-            className={`flex flex-col items-center transition-colors duration-300 ${
-              isActive("/chat")
-                ? "text-primary"
-                : "text-gray-600 hover:text-primary"
-            }`}
-          >
-            <MessageCircle className="w-6 h-6" />
-            <span className="text-xs mt-1">Chat</span>
-          </Link>
-        </li>
-      </ul>
-    </nav>
+    <div className="fixed bottom-0 left-0 right-0 flex justify-center pb-6 z-50">
+      <nav className="px-6 py-4 rounded-full bg-white/80 backdrop-blur-lg border border-gray-200 shadow-lg animate-fade-in">
+        <ul className="flex items-center space-x-8">
+          <li>
+            <Link
+              to="/"
+              className={`flex flex-col items-center transition-colors duration-300 ${
+                isActive("/")
+                  ? "text-primary"
+                  : "text-gray-600 hover:text-primary"
+              }`}
+            >
+              <Home className="w-6 h-6" />
+              <span className="text-xs mt-1">Home</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/diary"
+              className={`flex flex-col items-center transition-colors duration-300 ${
+                isActive("/diary")
+                  ? "text-primary"
+                  : "text-gray-600 hover:text-primary"
+              }`}
+            >
+              <BookOpenText className="w-6 h-6" />
+              <span className="text-xs mt-1">Diary</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/chat"
+              className={`flex flex-col items-center transition-colors duration-300 ${
+                isActive("/chat")
+                  ? "text-primary"
+                  : "text-gray-600 hover:text-primary"
+              }`}
+            >
+              <MessageCircle className="w-6 h-6" />
+              <span className="text-xs mt-1">Chat</span>
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </div>
   );
 };
 
